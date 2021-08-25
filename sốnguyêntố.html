@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function so_nguyen_to (number) {
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let n = 20;
+    let count = 0
+    let N = 2;
+    while (count <= n) {
+        if (so_nguyen_to(N)) {
+            document.write(N + ' ');
+            count++;
+
+        }
+        N = N + 1;
+    }
+</script>
+</body>
+</html>
